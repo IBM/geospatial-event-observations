@@ -1,0 +1,566 @@
+/*
+ *  Licensed Materials - Property of IBM
+ *  6949-04J
+ *  © Copyright IBM Corp. 2020 All Rights Reserved
+ */
+a.asgard-link {
+    color: rgba(59,104,123,1) !important;
+}
+
+a.asgard-link:hover {
+    cursor: pointer;
+    color: rgb(98,164,198) !important;
+}
+
+.asgard-control {
+    cursor: pointer;
+}
+
+.asgard-control:hover {
+    color: rgb(98,164,198);
+}
+
+.asgard-panel {
+    top: 3rem;
+    right: 1rem;
+    position: absolute;
+    z-index: 5;
+    width: 10rem;
+}
+
+.asgard-gps {
+    position: fixed;
+    z-index: 5;
+    top: 3.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+    font-size: 0.5rem;
+}
+
+.asgard-location-button {
+    position: fixed;
+    z-index: 10;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+}
+
+.asgard-manager {
+    position: fixed;
+    margin: auto;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.asgard-manager img {
+    max-width: 50vw;
+}
+
+.asgard-map-icon {
+    width: 1rem;
+}
+
+@keyframes pulse-border {
+    0% { border-color: rgba(98,164,198,1); }
+    50% { border-color: rgba(98,164,198,0); }
+    100% { border-color: rgba(98,164,198,1); }
+}
+
+.asgard-map-marker {
+    color: white;
+    padding: 6px;
+    border: 4px solid rgb(98,164,198);
+    border-radius: 50%;
+    animation: pulse-border 4s infinite;
+}
+
+.asgard-map-marker-highest {
+    color: white;
+    padding: 6px;
+    border: 4px solid rgb(98,164,198);
+    border-radius: 50%;
+    animation: pulse-border 1s infinite;
+}
+
+.asgard-map-marker-high {
+    color: white;
+    padding: 6px;
+    border: 4px solid rgb(98,164,198);
+    border-radius: 50%;
+    animation: pulse-border 2s infinite;
+}
+
+.asgard-map-marker-medium {
+    color: white;
+    padding: 6px;
+    border: 4px solid rgb(98,164,198);
+    border-radius: 50%;
+    animation: pulse-border 3s infinite;
+}
+
+.asgard-map-marker-low {
+    color: white;
+    padding: 6px;
+    border: 4px solid rgb(98,164,198);
+    border-radius: 50%;
+    animation: pulse-border 4s infinite;
+}
+
+.asgard-map-marker-lowest {
+    color: white;
+    padding: 6px;
+    border: 4px solid rgb(98,164,198);
+    border-radius: 50%;
+    animation: pulse-border 5s infinite;
+}
+
+.asgard-map-popup-noimage {
+    text-align: center;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    width: 125px;
+    height: 125px;
+}
+
+.asgard-map-popup-text {
+    width: 200px;
+}
+
+.asgard-map-popup-link a {
+    color: rgba(59,104,123,1) !important;
+}
+
+.asgard-map-popup-link a:hover {
+    color: rgb(98,164,198) !important;
+}
+
+.asgard-card {
+    background-color: rgba(255,255,255,0) !important;
+}
+
+.asgard-header {
+    display: inline-flex;
+    background-color: rgba(59,104,123,0.5) !important;
+    padding: 0px 0.5rem !important;
+}
+
+.asgard-card-header-item {
+    display: inline-flex;
+}
+
+.asgard-control-offset {
+    padding-left: 4rem;
+}
+
+.asgard-control-padding {
+    padding-left: 0.5rem;
+}
+
+.asgard-body {
+    background-color: rgba(255,255,255,1) !important;
+}
+
+.asgard-body-section-header {
+    color: rgba(59,104,123,1);
+    padding-bottom: 0.5rem;
+}
+
+.asgard-field-label {
+    vertical-align: middle !important;
+    padding: 0.25rem;
+    margin-top: auto;
+}
+
+.asgard-multi-column-section {
+    display: inline-flex;
+    width: 50%;
+}
+
+.asgard-scrollable-m {
+    max-height: 4rem !important;
+}
+
+.asgard-scrollable-l {
+    max-height: 8rem !important;
+}
+
+.asgard-multi-select {
+    max-height: calc(1rem * 8) !important;
+}
+
+.asgard-multi-select-large {
+    max-height: 16rem !important;
+}
+
+.asgard-list-group-item {
+    cursor: pointer;
+}
+
+.asgard-list-group-item:hover {
+    color: rgba(255,255,255,1) !important;
+    background-color: rgba(98,164,198,1);
+}
+
+.asgard-list-group-item-selected {
+    color: rgba(255,255,255,1) !important;
+    background-color: rgba(59,104,123,1);
+}
+
+.asgard-list-group-item-selected:hover {
+    color: rgba(255,255,255,1) !important;
+    background-color: rgba(59,104,123,1);
+}
+
+.asgard-multi-select-partner {
+    min-height: 8rem;
+}
+
+.asgard-multi-select-partner-large {
+    min-height: 16rem;
+}
+
+.asgard-body-item {
+    display: flex;
+}
+
+.asgard-button {
+    background-color: rgb(98,164,198);
+}
+
+.asgard-button:hover {
+    background-color: rgb(59,104,123);
+}
+
+.asgard-button.disabled {
+    cursor: default;
+    background-color: rgb(125, 131, 134);
+}
+
+.asgard-menu-icon {
+    color: rgb(59,104,123);
+}
+
+.asgard-menu-icon:hover {
+    cursor: pointer;
+    color: rgb(98,164,198);
+}
+
+.asgard-menu-icon.disabled {
+    cursor: default;
+    color: rgb(125, 131, 134);
+}
+
+.asgard-model-status-icon {
+    float: right;
+}
+
+.asgard-help {
+    color: rgb(98,164,198);
+}
+
+.asgard-help.disabled {
+    color: rgb(125, 131, 134);
+}
+
+.asgard-tab {
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.asgard-details-tab {
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.asgard-subtab {
+    padding: 0.25rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.asgard-subsubtab {
+    padding: 0.1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.asgard-tab.active,
+.asgard-details-tab.active,
+.asgard-subtab.active,
+.asgard-subsubtab.active {
+    cursor: default;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(222, 223, 224);
+    border-bottom-width: 0px;
+}
+
+.asgard-tab a,
+.asgard-details-tab a {
+    color: rgb(98,164,198);
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: transparent;
+}
+
+.asgard-subtab a {
+    color: rgb(98,164,198);
+    text-decoration: none;
+    padding: 0.25rem;
+    background-color: transparent;
+}
+
+.asgard-subsubtab a {
+    color: rgb(98,164,198);
+    text-decoration: none;
+    padding: 0.1rem;
+    background-color: transparent;
+}
+
+.asgard-tab a:hover,
+.asgard-details-tab a:hover,
+.asgard-subtab a:hover,
+.asgard-subsubtab a:hover {
+    text-decoration: none;
+    color: rgb(59,104,123);
+}
+
+.asgard-tab a.active.show,
+.asgard-details-tab a.active.show {
+    text-decoration: none;
+    color: rgb(98,164,198);
+}
+
+.asgard-tab.active a:hover,
+.asgard-details-tab.active a:hover,
+.asgard-subtab.active a:hover,
+.asgard-subsubtab.active a:hover,
+.asgard-subtab a.active.show:hover,
+.asgard-subsubtab a.active.show:hover {
+    cursor: default;
+    text-decoration: none;
+    color: rgb(98,164,198);
+}
+
+.asgard-table-body {
+    background-color: white;
+}
+
+.asgard-table-body-noborder {
+    border: none;
+}
+
+.asgard-table-body.disabled {
+    background-color: whitesmoke;
+}
+
+.asgard-table-body-border {
+    background-color: white;
+    border-color: rgb(59,104,123);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.asgard-table-body-border.disabled {
+    background-color: whitesmoke;
+    border-color: rgb(125, 131, 134);
+}
+
+.asgard-table-cell {
+    text-align: center;
+}
+
+.asgard-table-header {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(59,104,123);
+}
+
+.asgard-table-header:hover {
+    background-color: rgb(98,164,198);
+}
+
+.asgard-table-header-border {
+    background-color: white;
+    border-color: rgb(59,104,123);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.asgard-table-header-border:hover {
+    border-color: rgb(98,164,198);
+}
+
+.asgard-subtable-header-border {
+    color: white;
+    background-color: rgb(98,164,198);
+    border-color: rgb(59,104,123);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.asgard-text-centered {
+    text-align: center;
+}
+
+.asgard-table-header-end {
+    width: 1px;
+}
+
+.asgard-table-row,
+.asgard-table-row.even {
+    background-color: white;
+}
+
+.asgard-table-row.disabled,
+.asgard-table-row.odd,
+.odd {
+    background-color: whitesmoke;
+}
+
+.asgard-table-cell {
+    background-color: transparent;
+}
+
+.asgard-icon-picker {
+    font-family: Arial, FontAwesome;
+}
+
+.asgard-context {
+    max-height: 8rem;
+    min-width: 12rem;
+    overflow: scroll;
+}
+
+.asgard-checkbox {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    margin: auto 0;
+    border-radius: 2px;
+    border-color: rgb(125, 131, 134);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.asgard-checkbox.disabled {
+    cursor: default;
+    background-color: whitesmoke;
+}
+
+.asgard-checkbox.checked {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    margin: auto 0;
+    background-color: rgb(98,164,198);
+    border-radius: 2px;
+    border-color: rgb(125, 131, 134);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.asgard-checkbox.checked.disabled {
+    cursor: default;
+    background-color: rgba(98,164,198,0.4);
+}
+
+.asgard-checkbox-label {
+    color: rgba(0,0,0,1);
+}
+
+.asgard-checkbox-label.disabled {
+    color: rgba(0,0,0,0.5);
+}
+
+.asgard-radio-group-member {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.asgard-radio-button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border-color: rgb(125, 131, 134);
+    border-width: 1px;
+    border-style: solid;
+    margin: auto 0px;
+}
+
+.asgard-radio-button:hover {
+    border-width: 3px;
+}
+
+.asgard-radio-button.checked {
+    border-color: rgb(59,104,123);
+    border-width: 2px;
+    background-color: rgb(98,164,198);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.disposed {
+    display: none !important;
+}
+
+.mw-50 {
+    max-width: 50%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.mh-100 {
+    max-height: 100%;
+}
+
+.mh-25vh {
+    max-height: 25vh;
+}
+
+.input-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem 1rem;
+}
+
+.input-form label {
+    align-self: center;
+}
+
+.asgard-scrollable {
+    overflow-y: scroll;
+}
+
+.asgard-setting-info {
+    position: fixed;
+    margin: auto;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

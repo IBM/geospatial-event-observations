@@ -1,77 +1,139 @@
-<!-- This should be the location of the title of the repository, normally the short name -->
-# repo-template
+# IBM Geospatial Event Observations
 
-<!-- Build Status, is a great thing to have at the top of your repository, it shows that you take your CI/CD as first class citizens -->
-<!-- [![Build Status](https://travis-ci.org/jjasghar/ibm-cloud-cli.svg?branch=master)](https://travis-ci.org/jjasghar/ibm-cloud-cli) -->
+<div align="center">
+<img src="docs/images/demo.gif"  width="75%">
+</div>
 
-<!-- Not always needed, but a scope helps the user understand in a short sentance like below, why this repo exists -->
-## Scope
+## Deployment Instructions
 
-The purpose of this project is to provide a template for new open source repositories.
+### Deployment Audience
 
-<!-- A more detailed Usage or detailed explaination of the repository here -->
-## Usage
+The IBM Geospatial Event Observations application is Dockerized. To complete the deployment instructions the deployer should be familiar with the following Docker concepts:
 
-This repository contains some example best practices for open source repositories:
+ - **Building Docker Images:** [Documentation](https://docs.docker.com/engine/reference/commandline/build/)
+ - **Running Docker Containers:** [Documentation](https://docs.docker.com/engine/reference/commandline/run/)
+ - **(Optional)** Docker Container Port Mapping: [Documentation](https://docs.docker.com/engine/reference/commandline/port/)
+ - **(Optional)** Docker Container Volume Mapping: [Documentation](https://docs.docker.com/engine/reference/commandline/volume_create/)
 
-* [LICENSE](LICENSE)
-* [README.md](README.md)
-* [CONTRIBUTING.md](CONTRIBUTING.md)
-* [MAINTAINERS.md](MAINTAINERS.md)
-<!-- A Changelog allows you to track major changes and things that happen, https://github.com/github-changelog-generator/github-changelog-generator can help automate the process -->
-* [CHANGELOG.md](CHANGELOG.md)
+### Deployment Estimates
 
-> These are optional
+It is estimated that the IBM Geospatial Event Observations application can be deployed in 30 minutes:
 
-<!-- The following are OPTIONAL, but strongly suggested to have in your repository. -->
-* [dco.yml](.github/dco.yml) - This enables DCO bot for you, please take a look https://github.com/probot/dco for more details.
-* [travis.yml](.travis.yml) - This is a example `.travis.yml`, please take a look https://docs.travis-ci.com/user/tutorial/ for more details.
+ - **Retrieving Files:** 5 mins
+ - **Building the Docker Image:** 5 mins
+ - **Running the Docker Container:** 5 mins
+ - **Validation:** 15 mins
 
-These may be copied into a new or existing project to make it easier for developers not on a project team to collaborate.
+### Retrieve the Application Files
 
-<!-- A notes section is useful for anything that isn't covered in the Usage or Scope. Like what we have below. -->
-## Notes
+Create a directory for the application on your local system and copy the files from this GitHub repository using one of the following methods:
 
-**NOTE: While this boilerplate project uses the Apache 2.0 license, when
-establishing a new repo using this template, please use the
-license that was approved for your project.**
+1. Git Clone
 
-**NOTE: This repository has been configured with the [DCO bot](https://github.com/probot/dco).
-When you set up a new repository that uses the Apache license, you should
-use the DCO to manage contributions. The DCO bot will help enforce that.
-Please contact one of the IBM GH Org stewards.**
+`cd <TARGET_DIR>`
 
-<!-- Questions can be useful but optional, this gives you a place to say, "This is how to contact this project maintainers or create PRs -->
-If you have any questions or issues you can create a new [issue here][issues].
+SSH:
 
-Pull requests are very welcome! Make sure your patches are well tested.
-Ideally create a topic branch for every separate change you make. For
-example:
+`git clone git@github.com:IBM/geospatial-event-observations.git`
 
-1. Fork the repo
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+HTTPS:
 
-## License
+`git clone https://github.com/IBM/geospatial-event-observations.git`
 
-All source files must include a Copyright and License header. The SPDX license header is 
-preferred because it can be easily scanned.
+2. Download Archive
 
-If you would like to see the detailed LICENSE click [here](LICENSE).
+Download and extract an archive of the repository files from the [GitHub Repository page](https://github.com/IBM/geospatial-event-observations).
+
+<div align="center">
+<img src="docs/images/download.png"  width="75%">
+</div>
+
+### Build the docker image
+
+Run the following commands to build the docker image for the IBM Geospatial Event Observations application:
+
+`docker build -t <IMAGE_NAME>:<TAG> <TARGET_DIR>`
+
+Replace the following:
+* `<IMAGE_NAME>`: The name of the IBM Geospatial Event Observations docker image e.g. geospatial-event-observations
+* `<TAG>`: A tag name for this version of the docker image e.g. latest
+* `<TARGET_DIR>`: The path to the [Dockerfile](be-image/Dockerfile) at the root of the be-image
+
+### Running the docker image
+
+The IBM Geospatial Event Observations docker image can be run from docker.
+
+#### Docker
+
+Run the following docker command once the docker image is built:
+
+`docker run -d -p <EXT_PORT>:5000 -v <EXT_TARGET_DIR>:/event-data:rw <IMAGE_NAME>:<TAG>`
+
+Replace the following:
+* `<EXT_PORT>`: The host port to map to the docker container port e.g. 5000 (app would be available at http://localhost:5000)
+* `<EXT_TARGET_DIR>`: A Directory on the host used to create a Docker Volume for persistent storage e.g. /home/IBM-Geospatial-Event-Observations/event-data 
+* `<IMAGE_NAME>`: The name of the IBM Geospatial Event Observations docker image e.g. geospatial-event-observations
+* `<TAG>`: A tag name for this version of the docker image e.g. latest
+
+## Validation Instructions
+
+To validate that the application is running correctly open a web browser and point it to http://localhost:5000/map-ui/index.html
+
+* You should see the application home page:
+
+<div align="center">
+<img src="docs/images/app.png"  width="75%">
+</div>
+
+* The IBM Geospatial Event Observations Open API / Swagger page can be found at http://localhost:5000
+
+<div align="center">
+<img src="docs/images/api.png"  width="75%">
+</div>
+
+# Acknowledgements
+
+This project received funding as part of the ASGARD project under the EC Horizon 2020 FCT-2015 research and innovation programme.
+
+Grant Agreement No. 700381
+
+# Authors
+
+- Gordon Doyle <doylego@ie.ibm.com>
+- Gabriele Ranco
+- Jason Lloyd
+
+# License
 
 ```text
-#
-# Copyright 2020- IBM Inc. All rights reserved
-# SPDX-License-Identifier: Apache2.0
-#
+Copyright 2020 IBM, Inc and contributors. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+=================================================
+Creative Commons License
+=================================================
+
+This distribution uses the following components which are licensed under a Creative Commons License (https://creativecommons.org/licenses/)
+
+font-awesome (5.11.2) licensed under CC BY 4.0 + MIT-equivalent + OFL 1.1  https://github.com/FortAwesome/Font-Awesome
+License available at https://creativecommons.org/licenses/by/4.0/
+
+=================================================
+BSD 3-Clause License
+=================================================
+
+This distribution uses the following components which are licensed under a BSD 3-Clause License (https://opensource.org/licenses/BSD-3-Clause)
+
+ipython (7.12.0) Licensed under BSD 3-Clause https://github.com/ipython/ipython
+License available at https://github.com/ipython/ipython/blob/master/LICENSE
+
+scikit-learn (0.21.2) Licensed under BSD 3-Clause https://github.com/scikit-learn/scikit-learn
+License available at https://github.com/scikit-learn/scikit-learn/blob/master/COPYING
 ```
-## Authors
-
-Optionally, you may include a list of authors, though this is redundant with the built-in
-GitHub list of contributors.
-
-- Author: New OpenSource IBMer <new-opensource-ibmer@ibm.com>
-
-[issues]: https://github.com/IBM/repo-template/issues/new

@@ -1,0 +1,38 @@
+/*
+ *  Licensed Materials - Property of IBM
+ *  6949-04J
+ *  © Copyright IBM Corp. 2020 All Rights Reserved
+ */
+/*.asgard-panel {
+    top: 3rem;
+    right: 1rem;
+    position: absolute;
+    z-index: 5;
+    width: 10rem;
+}
+
+.asgard-card {
+    background-color: rgba(255,255,255,0) !important;
+}
+
+.asgard-header {
+    display: inline-block;
+    background-color: rgba(59,104,123,0.5) !important;
+    padding: 0px 0.5rem !important;
+}
+
+.asgard-card-header-item {
+    display: inline-block;
+}
+
+.asgard-control-offset {
+    padding-left: 4rem;
+}
+
+.asgard-body {
+    background-color: rgba(255,255,255,1) !important;
+}
+
+.disposed {
+    display: none;
+}*/

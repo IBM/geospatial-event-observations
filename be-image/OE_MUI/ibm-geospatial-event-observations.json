@@ -1,0 +1,96 @@
+{
+    "name": "ibm-geospatial-event-observations",
+    "description": "Geospatial Event Observations",
+    "longDescription": "Geospatial Event Observations through images and short text analysis",
+    "version": "1.0",
+    "port": "5000",
+    "endpoint": "http://ibm-geospatial-event-observations:5000/api/v1.0/mui",
+    "docsLink": "https://ci.tno.nl/gitlab/ASGARD/demonstrator-wp10-t10.5-geospatial_event_detection/blob/master/README.md",
+    "guiEndpoint": "http://ibm-geospatial-event-observations:5000/map-ui",
+    "category": "processing",
+    "subcategory": [
+        "text",
+        "image"
+    ],
+    "serviceType": "ASYNC",
+    "httpMethod": "POST",
+    "isGui": "true",
+    "isGpu": "true",
+    "inputs": [
+        {
+            "name": "Training_Data",
+            "description": "Training Data",
+            "type": "FOLDER",
+            "mandatory": "true",
+            "options": {
+                "tooltip": "Labelled text and images to train the event detection model."
+            }
+        },
+        {
+            "name": "Input_Data",
+            "description": "Input Data",
+            "type": "FOLDER",
+            "mandatory": "true",
+            "options": {
+                "tooltip": "Geotagged text and image data to run the model on."
+            }
+        },
+        {
+            "name": "Output_Folder",
+            "description": "Output Folder",
+            "type": "FOLDER",
+            "mandatory": "false",
+            "options": {
+                "tooltip": "Output folder for the list of events detected",
+                "default": "Same as the Input folder"
+            }
+        },
+        {
+            "name": "Start_Time",
+            "description": "Start Time (YYYYMMDD HH:mm:ss)",
+            "type": "STRING",
+            "mandatory": "false",
+            "options": {
+                "tooltip": "Start Time for a time filter"
+            }
+        },
+        {
+            "name": "End_Time",
+            "description": "End Time (YYYYMMDD HH:mm:ss)",
+            "type": "STRING",
+            "mandatory": "false",
+            "options": {
+                "tooltip": "End time for a temporal filter"
+            }
+        },
+        {
+            "name": "GPS",
+            "description": "GPS (Lat, Long)",
+            "type": "STRING",
+            "mandatory": "false",
+            "options": {
+                "tooltip": "GPS center point for a spatial filter"
+            }
+        },
+        {
+            "name": "RADIUS",
+            "description": "Radius (Km)",
+            "type": "INTEGER",
+            "mandatory": "false",
+            "options": {
+                "tooltip": "Radius around GPS center point for the spatial filter",
+                "default": "1",
+                "min": "1",
+                "max": "1",
+                "step": "10000"
+            }
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Output_Folder",
+            "description": "Output folder for the list of events detected.",
+            "type": "FOLDER"
+        }
+    ]
+}

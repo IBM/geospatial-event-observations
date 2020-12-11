@@ -186,7 +186,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright 2020 IBM, Inc and contributors. All rights reserved.
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -200,3 +200,23 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
+=================================================
+Creative Commons License
+=================================================
+
+This distribution uses the following components which are licensed under a Creative Commons License (https://creativecommons.org/licenses/)
+
+font-awesome (5.11.2) licensed under CC BY 4.0 + MIT-equivalent + OFL 1.1  https://github.com/FortAwesome/Font-Awesome
+License available at https://creativecommons.org/licenses/by/4.0/
+
+=================================================
+BSD 3-Clause License
+=================================================
+
+This distribution uses the following components which are licensed under a BSD 3-Clause License (https://opensource.org/licenses/BSD-3-Clause)
+
+ipython (7.12.0) Licensed under BSD 3-Clause https://github.com/ipython/ipython
+License available at https://github.com/ipython/ipython/blob/master/LICENSE
+
+scikit-learn (0.21.2) Licensed under BSD 3-Clause https://github.com/scikit-learn/scikit-learn
+License available at https://github.com/scikit-learn/scikit-learn/blob/master/COPYING

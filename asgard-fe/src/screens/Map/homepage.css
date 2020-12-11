@@ -1,0 +1,38 @@
+/*
+ *  Licensed Materials - Property of IBM
+ *  6949-04J
+ *  © Copyright IBM Corp. 2020 All Rights Reserved
+ */
+.card-header {
+    font-size: 1.5em;
+}
+
+.list-group-item-action {
+    font-size: 1.5em;
+    background-color: #343433;
+    color: white;
+}
+
+.list-group-item-action:hover {
+    background: linear-gradient(135deg, #07a7e3, #32dac3);
+    color: white;
+}
+
+.logo {
+    margin-bottom: 4rem;
+}
+
+.card {
+    border: 1px solid white;
+}
+
+.scrollable-block {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.card-header {
+    background-color: #191a1a;
+    color: white;
+    border: reset;
+}

@@ -1,0 +1,28 @@
+/*
+ *  Licensed Materials - Property of IBM
+ *  6949-04J
+ *  © Copyright IBM Corp. 2020 All Rights Reserved
+ */
+#logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.resting {
+    transition-timing-function: ease-in;
+
+    transition: 1s;
+
+    transform: translateX(-0.125rem);
+}
+
+.expanded {
+    transition-timing-function: ease-out;
+
+    transition: 1s;
+
+    transform: translateX(3rem);
+}

@@ -1,0 +1,51 @@
+/*
+ *  Licensed Materials - Property of IBM
+ *  6949-04J
+ *  © Copyright IBM Corp. 2020 All Rights Reserved
+ */
+.navbar {
+    box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navbar-lg {
+    padding: 1.5rem 3rem;
+}
+
+.custom-button {
+    position: absolute;
+    z-index: 1000;
+    padding: 0.5em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.navbar-brand {
+    color: black !important;
+}
+
+.navbar-bg-color {
+    background-color: #fff;
+    color: black;
+}
+
+.challenge-badge {
+    background-color: #09a7e4;
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: #09a7e4;
+}
+
+.form-control {
+    color: black;
+}
+
+.form-control:focus {
+    color: black;
+}

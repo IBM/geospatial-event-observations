@@ -1,0 +1,58 @@
+/*
+ *  Licensed Materials - Property of IBM
+ *  6949-04J
+ *  © Copyright IBM Corp. 2020 All Rights Reserved
+ */
+#sidebarMenu {
+    position: absolute;
+    top: 0px;
+    /*left: -225px;*/
+    height: 100vh;
+    max-width: 225px;
+    display: block;
+    z-index: 9;
+    background-color: rgba(59,104,123,0.5);
+    color: rgb(255,255,255);
+    padding: 1rem;
+}
+
+.hidden {
+    /*visibility: hidden;*/
+
+    transition-timing-function: ease-in;
+
+    transition: 1s;
+
+    transform: translateX(-110%);
+}
+
+.shown {
+    /*visibility: visible;*/
+    transition-timing-function: ease-out;
+
+    transition: 1s;
+
+    transform: translateX(-15px);
+}
+
+.asgard-menu-label {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.asgard-menu-item {
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.last {
+    position: inherit;
+    bottom: 2rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+.asgard-menu-item:hover {
+    background-color: rgb(98,164,198);
+}

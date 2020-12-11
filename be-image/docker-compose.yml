@@ -1,0 +1,24 @@
+#
+# Licensed Materials - Property of IBM
+# 6949-04J
+# © Copyright IBM Corp. 2020 All Rights Reserved
+#
+
+#
+# docker-compose file for the Geospatial Event Detection tool
+#
+
+#version: 2.3
+#services:
+  ibm-geospatial-event-observations:
+    image: docker-registry.darkwebmonitor.eu/wp10-t10.5-geospatial_event_detection:latest
+    container_name: ibm-geospatial-event-detection
+    volumes:
+      - ${ASGARD_DATA_BASE_DIR?Missing ASGARD_DATA base dir env variable}:/ASGARD_DATA
+    ports:
+      - 5999:5000
+    networks:
+      - conductornet
+    environment:
+      - IBM_GED_MUI=true
+    restart: always

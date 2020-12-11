@@ -1,0 +1,152 @@
+{
+    "en": {
+        "common": {
+            "done": "Done"
+        },
+        "alerts": {
+            "header_title": "Manage alerts"
+        },
+        "application_settings": {
+            "icons_label": "Reload Icons",
+            "icons_help": "Use this checkbox to reload the default Icons on the next restart. Warning: existing Icons will be deleted.",
+            "locs_label": "Reload Locations",
+            "locs_help": "Use this checkbox to reload the default Locations on the next restart. Warning: existing Locations will be deleted.",
+            "diag_label": "Diagnostics",
+            "diag_help": "Use this checkbox to turn application diagnostics information on and off. Diagnostics will be visible in the server logs.",
+            "update_button": "Save Settings"
+        },
+        "catalog_panel": {
+            "header_title": "Events"
+        },
+        "datasources": {
+            "header_title": "Manage Datasources",
+            "create_tab": "Create a Datasource",
+            "edit_tab": "Edit &amp; Delete Datasources",
+            "add_label": "Add a new Datasource",
+            "name_label": "Name",
+            "name_help": "A user-defined, unique name for the Datasource e.g. Internet Text, Crime scene images",
+            "type_label": "Type",
+            "type_title": "Datasource Type",
+            "type_help": "Select the Datasource type. See the documentation for more information.",
+            "file_label": "File",
+            "file_help": "Upload the datasource archive file containing text and image data.",
+            "dbtype_label": "DB Type",
+            "dbtype_title": "Database Type",
+            "dbtype_help": "Select the Database type.",
+            "dbhost_label": "Host",
+            "dbhost_help": "The FQDN of the DB server e.g. database.domain.com",
+            "db_label": "Database",
+            "db_help": "The name of the database hosted on the DB server that will be used.",
+            "username_label": "Username",
+            "username_help": "The DB username that will be used to query text and image information.",
+            "password_label": "Password",
+            "password_help": "The password for the DB username that will be used to query text and image information.",
+            "dbtable_label": "Table",
+            "dbtable_host": "The DB Table to be queried. See documentation for expected table structure.",
+            "whhost_label": "Host",
+            "whhost_help": "The Host URL for the Webhook. See documentation for expected URL structure.",
+            "whsteps_label": "Steps",
+            "whstep_title": "Step",
+            "add_whstep": "Add a Webhook Step",
+            "add_button": "Add Datasource",
+            "update_button": "Save Update",
+            "delete_button": "Delete Button"
+        },
+        "models": {
+            "header_title": "Manage Event Models",
+            "create_tab": "Create an Event Model",
+            "edit_tab": "Edit &amp; Delete Event Model",
+            "add_label": "Add a new Event Model",
+            "name_label": "Name",
+            "name_help": "A user-defined, unique name for the Event that this Model will be used to detect e.g. Fire, Protest",
+            "train_label": "Training Data",
+            "train_help": "Upload the dataset that will be used to train the Event Model to detect an occurance of that event",
+            "time_label": "Time Frame",
+            "time_help": "Specify a Time Frame for data points that would constitute an occurance of that event",
+            "area_label": "Area",
+            "area_help": "Specify an Area for data points that would constitute an occurance of that event",
+            "keyword_label": "Keyword",
+            "keyword_help": "Specify a Keyword that would constitute an occurance of this event",
+            "icon_label": "Icon",
+            "icon_help": "Select an Icon that will be used to represent an occurance of this event on the map",
+            "user_icon": "User defined icon",
+            "add_button": "Add Event Model",
+            "update_button": "Save Update",
+            "delete_button": "Delete Event Model"
+        },
+        "events": {
+            "header_title": "Manage Events",
+            "type_label": "Type",
+            "date_label": "Date",
+            "time_label": "Time",
+            "location_label": "Location",
+            "no_events": "No events detected."
+        },
+        "icons": {
+            "fa_label": "Font Awesome",
+            "fa_help": "A font-awesome icon tag class value (e.g. fas fa-ambulance)",
+            "file_label": "File",
+            "file_help": "An image file (jpg, png, bmp, ico) that can be used as map marker (max size 64x64 pixels)",
+            "class_label": "Class",
+            "image_label": "Image",
+            "eg_label": "e.g.",
+            "eg_help": "Text examples of what the Icon could represent",
+            "add_button": "Add Icon",
+            "user_icon": "User defined icon",
+            "delete_button": "Delete Icon"
+        },
+        "locations": {
+            "header_title": "Manage Locations",
+            "add_label": "Add a new location",
+            "name_label": "Name",
+            "add_name_help": "A user-defined, unique name for the location",
+            "lat_label": "Latitude",
+            "add_lat_help": "GPS Latitude coordinate",
+            "long_label": "Longitude",
+            "add_long_help": "GPS Longitude coordinate",
+            "add_button": "Add location",
+            "update_button": "Save Update",
+            "delete_location": "Delete Location"
+        },
+        "logo": {
+
+        },
+        "realtime_clock": {
+
+        },
+        "replayer": {
+            "header_title": "Event Replayer"
+        },
+        "reports": {
+            "header_title": "Manage Reports"
+        },
+        "settings": {
+            "header_title": "Application Settings",
+            "settings_title": "Application Settings",
+            "settings_label": "Manage Application Settings",
+            "icons_title": "Map Marker Icons",
+            "icons_label": "Manage Map Marker Icons"
+        },
+        "sidebar_menu": {
+            "menu_title": "ASGARD Event Detection",
+            "locs_link": "Locations",
+            "models_link": "Event Models",
+            "events_link": "Events",
+            "replay_link": "Event Replayer",
+            "ds_link": "Datasources",
+            "reports_link": "Reports",
+            "alerts_link": "Alerts"
+        },
+        "webhook_step": {
+            "req_title": "Request",
+            "resp_title": "Response",
+            "add_button": "Add a Parameter",
+            "resp_checkbox_label": "Handled By Endpoint"
+        },
+        "webhook_param": {
+            "secure_label": "Secure Value",
+            "link_label": "Link to Previous Step",
+            "delete_button": "Remove Parameter"
+        }
+    }
+}

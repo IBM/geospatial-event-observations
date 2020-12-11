@@ -1,0 +1,107 @@
+[
+    {
+        "type": "font-awesome",
+        "location": "fas fa-ambulance",
+        "examples": "Ambulance"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-user-injured",
+        "examples": "Assault"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-car-crash",
+        "examples": "Traffic Collision"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-fire",
+        "examples": "Fire, Arson"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-bullhorn",
+        "examples": "Protest, Demonstration"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-water",
+        "examples": "Flood"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-house-damage",
+        "examples": "Vandalism, Property Damage"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-euro-sign",
+        "examples": "Theft"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-spray-can",
+        "examples": "Graffiti"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-trash",
+        "examples": "Illegal Dumping"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-mask",
+        "examples": "Robbery"
+    },
+    {
+        "type": "font-awesome",
+        "location": "far fa-id-badge",
+        "examples": "Tresspassing"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-volume-up",
+        "examples": "Noise"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-paw",
+        "examples": "Animal Attack"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-syringe",
+        "examples": "Drugs"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-people-carry",
+        "examples": "Looting"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-life-ring",
+        "examples": "Swimming, Aquatic Incident"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-flag-checkered",
+        "examples": "Street Racing"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-ticket-alt",
+        "examples": "Fare Dodging"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-tag",
+        "examples": "Shoplifting"
+    },
+    {
+        "type": "font-awesome",
+        "location": "fas fa-crosshairs",
+        "examples": "Shooting, Gunfire"
+    }
+]
