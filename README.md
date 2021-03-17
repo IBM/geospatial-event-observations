@@ -19,10 +19,18 @@ The IBM Geospatial Event Observations application is Dockerized. To complete the
 
 It is estimated that the IBM Geospatial Event Observations application can be deployed in 30 minutes:
 
+ - **Create a Mapbox Account**: 10 mins
  - **Retrieving Files:** 5 mins
  - **Building the Docker Image:** 5 mins
  - **Running the Docker Container:** 5 mins
  - **Validation:** 15 mins
+
+### Create a Mapbox Account
+
+The Geospatial Event Observations application uses [Mapbox](https://www.mapbox.com/) as the map provider for the Map-based User Interface. To use the Map-based User Interface you will need to create a Mapbox account and generate an API key through the following process:
+
+1. [Sign-up](https://account.mapbox.com/auth/signup/) for a Mapbox account. There is a free tier that can be used to test Geospatial Event Observations.
+2. Once your account is created you can manage [Access Tokens](https://account.mapbox.com/access-tokens/). An Access Token is needed for use with the Map-based User Interface for Geospatial Event Observations.
 
 ### Retrieve the Application Files
 
@@ -79,10 +87,10 @@ Replace the following:
 
 To validate that the application is running correctly open a web browser and point it to http://localhost:5000/map-ui/index.html
 
-* You should see the application home page:
+* You should see the application home page with a request to enter your Mapbox Access Token:
 
 <div align="center">
-<img src="docs/images/app.png"  width="75%">
+<img src="docs/images/firstlaunch.png"  width="75%">
 </div>
 
 * The IBM Geospatial Event Observations Open API / Swagger page can be found at http://localhost:5000
@@ -90,6 +98,44 @@ To validate that the application is running correctly open a web browser and poi
 <div align="center">
 <img src="docs/images/api.png"  width="75%">
 </div>
+
+## Configure the Mapbox API Key
+
+To store the Mabox Access Token created previously in the application instance perform the following steps:
+
+1. Expand the Geospatial Event Observations menu by clicking on the globe icon.
+
+<div align="center">
+<img src="docs/images/menu.png"  width="75%">
+</div>
+
+2. Open the Settings menu by clicking the `cog` icon at the bottom of the menu. Change to the Mapbox Key tab.
+
+<div align="center">
+<img src="docs/images/settings.png"  width="75%">
+</div>
+
+3. Enter the Mapbox Access Token from your Mapbox account into the `Key` text field. 
+
+<div align="center">
+<img src="docs/images/mapboxkey.png"  width="75%">
+</div>
+
+4. Save the Mapbox Key by clicking the `Save` button. Once the Mapbox Key is saved the Mapbox map should populate in the background.
+
+<div align="center">
+<img src="docs/images/savekey.png"  width="75%">
+</div>
+
+5. The Geospatial Event Observations application is now ready to use.
+
+<div align="center">
+<img src="docs/images/mapboxready.png"  width="75%">
+</div>
+
+## Next Steps
+
+For more information on using Geospatial Event Observations continue to the [User Guide](docs/README_User_Guide.md).
 
 # Acknowledgements
 
